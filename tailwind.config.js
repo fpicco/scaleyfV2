@@ -4,10 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bookmark-purple": "#5267df",
-        "bookmark-red": "#fa5959",
-        "bookmark-blue": "#242a45",
-        "bookmark-grey": "#9194a2",
+        "scaleyf-dark-grey": "#9194a2",
         "scaleyf-white": "#f7f7f7",
         "scaleyf-green": "#419669",
         "scaleyf-blue": "#28427A",
@@ -23,6 +20,8 @@ module.exports = {
         },
         background: {
           "white": "#ffffff",
+          "scaleyf-blue":"#28427A",
+          "transparent":"transparent",
         },
         border: {
           1: "1px",

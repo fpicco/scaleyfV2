@@ -18,18 +18,19 @@
 
 <body class="font-Poppins">
     <!-- ------------------------------- Header -------------------------------- -->
-    <header class="border-b-2  bg-white fixed w-full z-50 -mt-20">
+    <header class=" gradient-border gradient-border-h  bg-white fixed w-full z-50 -mt-24 ml-0">
 
         <nav class="container flex item-center py-4 mt-2 sm:mt-4">
 
-                <a class="flex items-center py-1 w-1/4 mx-auto px-2" href="#">
-                    <img class="w-9" src="./imgs/Bitcoin.png">
-                    <h2 class="text-md text-center text-scaleyf-blue uppercase px-2">Scaleyf</h2>
-                </a>
+            <a class="flex items-center py-1 w-1/4 mx-auto px-2" href="#">
+                <img class="w-9" src="./imgs/Bitcoin.png">
+                <h2 class="text-md text-center text-scaleyf-blue uppercase px-2">Scaleyf</h2>
+            </a>
 
             <ul class="hidden md:flex flex-1 justify-end items-center gap-1 text-scaleyf-blue uppercase text-xs">
                 <li><a class="gradient-border hover:gradient-border-h" href="#features">Features</a></li>
-                <li><a class="gradient-border hover:gradient-border-h" href="create-profile.html">Create profile</a></li>
+                <li><a class="gradient-border hover:gradient-border-h" href="create-profile.html">Create profile</a>
+                </li>
                 <li><a class="gradient-border hover:gradient-border-h" href="set-strategy.html">Set strategy</a></li>
                 <li><a class="gradient-border hover:gradient-border-h" href="run-stop-bot.html">Run/Stop bot</a></li>
                 <li><a class="gradient-border hover:gradient-border-h" href="#contact">Contact</a></li>
@@ -72,16 +73,21 @@
 
         <!-- -------------------------- Rounded Rectangle -------------------------- -->
         <div
-            class="hidden md:block overflow-hidden bg-scaleyf-blue rounded-l-full absolute h-80 w-2/4 top-72 right-0 lg:-bottom-28  lg:w-5/12">
+            class="hidden lg:block overflow-hidden 
+            gradient-border border-gradient-r-blue-green-transparent rounded-l-full absolute h-80 w-2/4 right-0 -mr-2 lg:-bottom-16 lg:w-5/12">
         </div>
+        <!-- <div
+                class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-l-full absolute h-80 w-2/4 right-0 lg:-bottom-16 lg:w-5/12">
+            </div> -->
+
     </section>
 
     <!-- ------------------------------ Features ------------------------------- -->
-    <section id="features" class="bg-bookmark-white pt-40 pb-20">
+    <section id="features" class="bg-scaleyf-white pt-40 pb-20">
         <!-- ------------------------------- Heading ------------------------------- -->
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
             <h2 class="text-3xl text-center text-scaleyf-blue ">Features</h2>
-            <p class="text-center text-bookmark-grey mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="text-center text-scaleyf-dark-grey mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis facilis qui ad, ex nam quas tempore veritatis placeat praesentium, dolorem accusamus ullam
                 sit, ducimus doloremque nulla quis. Animi, sunt optio?</p>
         </div>
@@ -95,7 +101,7 @@
                 <!-- ------------------------------- Content ------------------------------- -->
                 <div class="flex flex-1 flex-col items-center lg:items-start">
                     <h2 class="text-2xl text-scaleyf-blue ">Lorem ipsum dolor sit amet.</h2>
-                    <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum, dolor
+                    <p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum, dolor
                         sit amet consectetur adipisicing elit. Nemo et mollitia vitae quasi dolorum asperiores quod aut
                         deserunt commodi ex.
                     </p>
@@ -105,8 +111,12 @@
 
             </div>
             <!-- -------------------------- Rounded Rectangle -------------------------- -->
-            <div
+            <!-- <div
                 class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12">
+            </div> -->
+            <div
+                class="hidden lg:block overflow-hidden 
+            gradient-border border-gradient-r-blue-green-transparent rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12 -ml-2">
             </div>
         </div>
         <!-- ----------------------------- Feature #2 ------------------------------ -->
@@ -119,7 +129,7 @@
                 <!-- ------------------------------- Content ------------------------------- -->
                 <div class="flex flex-1 flex-col items-center lg:items-start">
                     <h2 class="text-2xl text-scaleyf-blue ">Lorem, ipsum dolor.</h2>
-                    <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum, dolor
+                    <p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum, dolor
                         sit amet consectetur adipisicing elit. Quasi eum harum distinctio saepe nulla. Eum?
                     </p>
                     <button type="button" class="btn hover:bg-scaleyf-green ">More
@@ -128,9 +138,15 @@
 
             </div>
             <!-- -------------------------- Rounded Rectangle -------------------------- -->
-            <div
+            <!-- <div
                 class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-l-full absolute h-80 w-2/4 right-0 lg:-bottom-16 lg:w-5/12">
+            </div> -->
+
+            <div
+                class="hidden lg:block overflow-hidden 
+            gradient-border border-gradient-r-blue-green-transparent rounded-l-full absolute h-80 w-2/4 right-0 -mr-2 lg:-bottom-16 lg:w-5/12">
             </div>
+
         </div>
         <!-- ----------------------------- Feature #3 ------------------------------ -->
         <div class="relative mt-10 lg:mt-20">
@@ -141,10 +157,9 @@
                 </div>
                 <!-- ------------------------------- Content ------------------------------- -->
                 <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h2 class="text-2xl text-scaleyf-blue ">Share your bookmarks</h2>
-                    <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Easily share your
-                        bookmarks and collections with others. Create a shareable link that you can send at the
-                        click of a button.
+                    <h2 class="text-2xl text-scaleyf-blue ">Lorem, ipsum dolor.</h2>
+                    <p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum dolor, sit
+                        amet consectetur adipisicing elit. Quasi, aperiam.
                     </p>
                     <button type="button" class="btn hover:bg-scaleyf-green ">More
                         Info</button>
@@ -152,25 +167,29 @@
 
             </div>
             <!-- -------------------------- Rounded Rectangle -------------------------- -->
-            <div
+            <!-- <div
                 class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12">
+            </div> -->
+            <div
+                class="hidden lg:block overflow-hidden 
+            gradient-border border-gradient-r-blue-green-transparent rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12 -ml-2">
             </div>
         </div>
 
     </section>
 
     <!-- --------------------------------- FAQ --------------------------------- -->
-    <!-- <section class="bg-bookmark-white py-20 ">
+    <!-- <section class="bg-scaleyf-white py-20 ">
         <div class="container"> -->
-            <!-- ------------------------------- Heading ------------------------------- -->
-            <!-- <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+    <!-- ------------------------------- Heading ------------------------------- -->
+    <!-- <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
                 <h2 class="text-3xl text-center text-scaleyf-blue ">Frecuently Asked Questions</h2>
-                <p class="text-center text-bookmark-grey mt-4">
+                <p class="text-center text-dark-grey mt-4">
                     Here are some of our FAQs. If you have any other questions you’d like answered please feel free to
                     email us.</p>
             </div> -->
-            <!-- ------------------------------ FAQ items ------------------------------ -->
-            <!-- <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+    <!-- ------------------------------ FAQ items ------------------------------ -->
+    <!-- <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
                 <div class="flex items-center border-b py-4">
                     <span class="flex-1">Lorem ipsum dolor sit?</span>
                     <i class="text-scaleyf-green fas fa-chevron-down"></i>
@@ -212,7 +231,7 @@
     <footer class="bg-scaleyf-blue py-8">
         <div class="container flex flex-col md:flex-row items-center">
             <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-                <img src="./imgs/logo-bookmark-white.png" alt="">
+
                 <ul class="flex-col text-white uppercase gap-12 text-xs">
                     <li class="my-2"><a href="#features">Features</a></li>
                     <li class="my-2"><a href="create-profile.html">Create profile</a>
