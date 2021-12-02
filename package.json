@@ -1,0 +1,28 @@
+{
+  "name": "scaleyfV2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwinds": "tailwind build -i src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpicco/scaleyfV2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpicco/scaleyfV2/issues"
+  },
+  "homepage": "https://github.com/fpicco/scaleyfV2#readme",
+  "dependencies": {
+    "tailwindcss-border-gradient-radius": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}

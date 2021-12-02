@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@layer components {
+  .btn {
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300 bg-scaleyf-blue text-white;
+  }
+  .gradient-border {
+    /* @apply border-transparent border-solid border-2 rounded-xl text-scaleyf-blue p-3 m-0; */
+
+    @apply border-transparent border-solid border-0 border-b-2 text-scaleyf-blue py-1 px-1 mx-1.5 transition duration-300;
+  }
+  @variants hover {
+    .gradient-border-h {
+      @apply border-gradient-r-blue-green-white;
+    }
+  }
+}
