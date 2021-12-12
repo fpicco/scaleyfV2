@@ -8,7 +8,7 @@ module.exports = {
         "scaleyf-white": "#f7f7f7",
         "scaleyf-green": "#419669",
         "scaleyf-blue": "#28427A",
-        "scaleyf-grey": "#CACACA",
+        "scaleyf-grey": "#cacaca",
       },
       linearBorderGradients: {
         // https://www.npmjs.com/package/tailwindcss-border-gradient-radius

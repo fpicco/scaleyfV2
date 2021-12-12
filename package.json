@@ -1,23 +1,23 @@
 {
-  "name": "scaleyfV2",
+  "name": "scaleyf-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:tailwinds": "tailwind build -i src/style.css -o public/style.css"
+    "build:tailwind": "tailwind build -i src/style.css -o public/styles/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fpicco/scaleyfV2.git"
+    "url": "git+https://github.com/agusmdev/scaleyf-web.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fpicco/scaleyfV2/issues"
+    "url": "https://github.com/agusmdev/scaleyf-web/issues"
   },
-  "homepage": "https://github.com/fpicco/scaleyfV2#readme",
+  "homepage": "https://github.com/agusmdev/scaleyf-web#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "tailwindcss-border-gradient-radius": "^2.0.0"
   },
   "devDependencies": {

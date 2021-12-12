@@ -3,179 +3,266 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Scaleyf</title>
+	<title>Scaleyf</title>
 
-    <link rel="shortcut icon" type="image/jpg" href="./imgs/Bitcoin.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/hamburger-menu.css">
-    <link rel="stylesheet" href="./styles/style.css">
+	<link rel="shortcut icon" type="image/jpg" href="./imgs/Bitcoin.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/hamburger-menu.css">
+	<link rel="stylesheet" href="./styles/style.css">
 
 </head>
 
 <body class="font-Poppins">
-    <!-- ------------------------------- Header -------------------------------- -->
-   <!-- https://codepen.io/ttntm/pen/dqaNPp -->
-   <header id='top' class="bg-white gradient-border gradient-border-h fixed w-full z-50 -mt-24 ml-0">
+	<!-- ------------------------------- Header -------------------------------- -->
+	<!-- https://codepen.io/ttntm/pen/dqaNPp -->
+	<header id='top' class="gradient-border gradient-border-h fixed w-full z-50 -mt-16 m-0">
+		<nav id="site-menu" class="container flex flex-col md:flex-row justify-between item-center pb-1 mt-1 md:mt-2">
+			<div class="flex justify-between">
+				<a class="flex items-center py-1 mx-auto" href="index.html">
+					<img class="w-9" src="./imgs/Bitcoin.png">
+					<h2 class="text-md text-center text-scaleyf-blue uppercase px-2">Scaleyf</h2>
+				</a>
+				<button id="menuBtn" class="hamburger block md:hidden l  self-end pr-4" type="button"
+					onclick="navToggle();">
+					<span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+				</button>
+			</div>
 
-    <nav id="site-menu" class="container flex flex-col md:flex-row justify-between item-center py-4 mt-2 md:mt-4">
-        <div class="flex justify-between">
-            <a class="flex items-center py-1 mx-auto px-2" href="#">
-                <img class="w-9" src="./imgs/Bitcoin.png">
-                <h2 class="text-md text-center text-scaleyf-blue uppercase px-2">Scaleyf</h2>
-            </a>
-            <button id="menuBtn" class="hamburger block md:hidden focus:outline-none self-end pr-4" type="button"
-                onclick="navToggle();">
-                <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
-            </button>
-        </div>
+			<ul id="menu"
+				class="hidden w-full md:w-auto self-end md:self-center md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 flex-1 justify-end items-center gap-1 text-scaleyf-blue uppercase text-xs">
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h" " href="
+						index.html#features">Features</a></li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="create-profile.html">Create profile</a>
+				</li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="#">Set
+						strategy</a></li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="run-stop-bot.html">Run/Stop bot</a></li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="contact.html">Contact</a></li>
 
-        <ul id="menu"
-            class="hidden w-full md:w-auto self-end md:self-center md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 flex-1 justify-end items-center gap-1 text-scaleyf-blue uppercase text-xs">
-            <li class="mt-4 md:mt-0"><a
-                    class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h" " href="
-                    index.html#features">Features</a></li>
-            <li class="mt-4 md:mt-0"><a
-                    class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                    href="create-profile.html">Create profile</a>
-            </li>
-            <li class="mt-4 md:mt-0"><a
-                    class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                    href="#">Set strategy</a></li>
-            <li class="mt-4 md:mt-0"><a
-                    class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                    href="run-stop-bot.html">Run/Stop bot</a></li>
-            <li class="mt-4 md:mt-0"><a
-                    class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                    href="index.html#contact">Contact</a></li>
+			</ul>
 
-            <!-- <button type="button"
-                class="bg-gradient-to-r from-scaleyf-blue  to-scaleyf-green text-white rounded-md px-7 py-3 uppercase">Login</button> -->
-        </ul>
+		</nav>
 
-    </nav>
+	</header>
 
-</header>
 
-   
-    <!-- ------------------------------ Set strategy ------------------------------- -->
-    <section id="set-strategy"
-        class=" mt-24 relative bg-gradient-to-r from-scaleyf-blue to-scaleyf-green pt-16 pb-12 lg:pt-24 lg:pb-20">
-        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-            <h2 class="text-3xl text-center text-white ">Set your strategy</h2>
-            <p class="text-center text-scaleyf-grey mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                facere, soluta ipsum molestiae velit illum.</p>
-        </div>
-        <!-- -------------------------------- Form -------------------------------- -->
-        <div class="container flex">
-            <form class="w-full max-w-xl mx-auto mt-8 lg:mt-16">
-                <div class="md:flex md:items-center mb-6">
-                    <div class="w-full">
-                        <label class=" uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
-                            for="email">
-                            Timeframe
-                        </label>
-                        <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
-                            id="timeframe" type="timeframe" name="timeframe">
-                    </div>
-                </div>
-                <div class="md:flex md:items-center mb-6">
-                    <div class="w-full">
-                        <label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
-                            for="portfolio-location">
-                            Portfolio location
-                        </label>
+	<!-- ------------------------------ Set strategy ------------------------------- -->
+	<section id="set-strategy"
+		class=" mt-16 relative bg-gradient-to-r from-scaleyf-blue to-scaleyf-green pt-16 pb-12 lg:pt-24 lg:pb-20">
+		<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+			<h2 class="text-3xl text-center text-white ">Set your strategy</h2>
+			<p class="text-center text-scaleyf-grey mt-4">Choose your strategy configuration, there are limited options
+				but more of them will be opened soon.</p>
+		</div>
+		<!-- -------------------------------- Form -------------------------------- -->
+		<div class="container flex" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
+			<form class="w-full max-w-xl mx-auto mt-8 lg:mt-16">
+				<div class="md:flex md:items-center mb-6">
+					<div class="w-full">
+						<label class=" uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
+							for="email">
+							Timeframe
+						</label>
+						<div class="inline-block relative w-full">
+							<select id="timeframe"
+								class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green">
+                                <option name=" timeframe-1m" id="timeframe-1m" value="1m">1 minute</option>
+								<option name="timeframe-5m" id="timeframe-5m" value="5m">5 minutes</option>
+								<option name="timeframe-15m" id="timeframe-15m" value="15m">15 minutes</option>
+								<option name="timeframe-1h" id="timeframe-1h" value="1h">1 hour</option>
+								<option name="timeframe-4h" id="timeframe-4h" value="4h">4 hours</option>
+							</select>
+							<div
+								class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+								<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20">
+									<path
+										d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:flex md:items-center mb-6">
+					<div class="w-full">
+						<label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
+							for="portfolio-location">
+							Portfolio allocation  (%)
+						</label>
 
-                        <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
-                            id="portfolio-location" type="text" name="portfolio-location">
-                    </div>
-                </div>
+						<input
+							class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
+							id="portfolio-allocation" type="number" min="1" max="100" value="1" name="portfolio-allocation" required>
+						
+					</div>
+				</div>
 
-                <div class="md:flex md:items-center mb-6">
-                    <div class="w-full">
-                        <label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4" for="par">
-                            Par
-                        </label>
-                        <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
-                            id="par" type="text" name="par">
-                    </div>
-                </div>
-                <div class="md:flex md:items-center mb-6">
-                    <div class="w-full">
-                        <label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
-                            for="dca-cofig">
-                            dca config
-                        </label>
-                        <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
-                            id="dca-cofig" type="text" name="dca-cofig">
-                    </div>
-                </div>
-                <div class="md:flex md:items-center mb-6">
-                    <div class="w-full">
-                        <label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
-                            for="email-bot">
-                            email
-                        </label>
-                        <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
-                            id="email-bot" type="text" name="email-bot">
-                    </div>
-                </div>
-                <div class="md:flex md:items-center mb-6">
-                    <div class="w-full">
-                        <label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4" for="pin">
-                            pin
-                        </label>
-                        <input
-                            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
-                            id="pin" type="text" name="pin">
-                    </div>
-                </div>
-                <div class="md:flex flex-col md:items-center mb-6">
+				<div class="md:flex md:items-center mb-6">
+					<div class="w-full">
+						<label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4" for="par">
+							Par
+						</label>
+						<div class="inline-block relative w-full">
+							<select
+								class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
+								id="pair">
+								<option name=" par-ETH/BTC" id="par-ETH/BTC" value="ETH/BTC">ETH/BTC</option>
+								<option name="par-MATIC/BTC" id="par-MATIC/BTC" value="MATIC/BTC">MATIC/BTC</option>
+								<option name="par-SOL/BTC" id="par-SOL/BTC" value="SOL/BTC">SOL/BTC</option>
+								<option name="par-ADA/BTC" id="par-ADA/BTC" value="ADA/BTC">ADA/BTC</option>
+								<option name="par-XRP/BTC" id="par-XRP/BTC" value="XRP/BTC">XRP/BTC</option>
+								<option name="par-LUNA/BTC" id="par-LUNA/BTC" value="LUNA/BTC">LUNA/BTC</option>
+								<option name="par-COS/BTC" id="par-COS/BTC" value="COS/BTC">COS/BTC</option>
+								<option name="par-DOT/BTC" id="par-DOT/BTC" value="DOT/BTC">DOT/BTC</option>
+								<option name="par-LINK/BTC" id="par-LINK/BTC" value="LINK/BTC">LINK/BTC</option>
+								<option name="par-SAND/BTC" id="par-SAND/BTC" value="SAND/BTC">SAND/BTC</option>
+								<option name="par-DOGE/BTC" id="par-DOGE/BTC" value="DOGE/BTC">DOGE/BTC</option>
+								<option name="par-LTC/BTC" id="par-LTC/BTC" value="LTC/BTC">LTC/BTC</option>
+								<option name="par-MANA/BTC" id="par-MANA/BTC" value="MANA/BTC">MANA/BTC</option>
+								<option name="par-ATOM/BTC" id="par-ATOM/BTC" value="ATOM/BTC">ATOM/BTC</option>
+								<option name="par-XLM/BTC" id="par-XLM/BTC" value="XLM/BTC">XLM/BTC</option>
+								<option name="par-AVAX/BTC" id="par-AVAX/BTC" value="AVAX/BTC">AVAX/BTC</option>
+								<option name="par-CTXC/BTC" id="par-CTXC/BTC" value="CTXC/BTC">CTXC/BTC</option>
+								<option name="par-GALA/BTC" id="par-GALA/BTC" value="GALA/BTC">GALA/BTC</option>
+								<option name="par-FTM/BTC" id="par-FTM/BTC" value="FTM/BTC">FTM/BTC</option>
+								<option name="par-FIO/BTC" id="par-FIO/BTC" value="FIO/BTC">FIO/BTC</option>
+								<option name="par-GXS/BTC" id="par-GXS/BTC" value="GXS/BTC">GXS/BTC</option>
+								<option name="par-VET/BTC" id="par-VET/BTC" value="VET/BTC">VET/BTC</option>
+								<option name="par-FIL/BTC" id="par-FIL/BTC" value="FIL/BTC">FIL/BTC</option>
+							</select>
+							<div
+								class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+								<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20">
+									<path
+										d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:flex md:items-center mb-6">
+					<div class="w-full">
+						<label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
+							for="dca-cofig">
+							dca config
+						</label>
+						<div class="inline-block relative w-full">
+							<select
+								class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
+								id="dca-config">
+								<option name="dca-cofig-1" id="dca-cofig-1" value="0">
+									3%, 10%, 15%, 20% (conservative)
+								</option>
+								<option name=" dca-cofig-0" id="dca-cofig-0" value="1">
+									8%, 12%, 20% (moderate)
+								</option>
+								<option name="dca-cofig-2" id="dca-cofig-2" value="2">
+									5%, 10%, 15% (aggressive)
+									</option>
+							</select>
+							<div
+								class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+								<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20">
+									<path
+										d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:flex md:items-center mb-6">
+					<div class="w-full">
+						<label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4"
+							for="email-bot">
+							email - <span class="normal-case text-sm">The email associated with your credentials.</span>
+						</label>
+						<input
+							class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
+							id="email-strategy" type="email" name="email-strategy" required>
+					</div>
+				</div>
+				<div class="md:flex md:items-center mb-6">
+					<div class="w-full">
+						<!-- <div class="w-full inline-block relative "> -->
+						<label class="uppercase block text-white font-light md:text-left mb-1 md:mb-2 pr-4" for="pin">
+							pin - <span class="normal-case text-sm">Remember this PIN, you will need this to run and stop your bot.</span> 
+						</label>
+						<div class="inline-block relative w-full">
+							<input
+								class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-scaleyf-green"
+								id="pin-strategy" type="password" name="pin" required>
+							<div class="absolute inset-y-0 right-0 flex items-center px-2 pr-4 text-gray-700">
+								<i class="fas fa-eye-slash cursor-pointer" id="eye-icon-strategy"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:flex flex-col md:items-center mb-6">
 
-                    <div class="md:flex flex-col md:items-center">
-                        <div class="md:w-full">
-                            <button type="button" class="btn hover:bg-scaleyf-green mt-2 lg:mt-8">Set
-                                strategy</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+					<div class="flex flex-col items-center">
+						<div class="md:w-full">
+							<button type="submit" class="btn hover:btn-h  hover:bg-scaleyf-green mt-2 lg:mt-8">Set
+								strategy</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
 
-    </section>
-   
+	</section>
 
-    <!-- ------------------------------- Footer -------------------------------- -->
-    <footer class="bg-scaleyf-blue py-8">
-        <div class="container flex flex-col md:flex-row items-center">
-            <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-                
-                <ul class="flex-col text-white uppercase gap-12 text-xs">
-                    <li class="my-2"><a href="index.html#features">Features</a></li>
-                    <li class="my-2"><a href="create-profile.html">Create profile</a>
-                    </li>
-                    <li class="my-2"><a href="#">Set strategy</a></li>
-                    <li class="my-2"><a href="run-stop-bot.html">Run/Stop bot</a></li>
-                    <li class="my-2"><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="flex gap-10 mt-12 md:mt-0">
-                <li class="list-none"><i class="text-white text-2xl fab fa-twitter"></i></li>
-                <li class="list-none"><i class="text-white text-2xl fab fa-facebook-square"></i></li>
 
-            </div>
-        </div>
-    </footer>
-<script src="./scripts/hamburgerMenu.js"></script>
+	<!-- ------------------------------- Footer -------------------------------- -->
+	<footer class="py-4 bg-white w-full mx-0 gradient-border-h border-t-2 border-b-0 gradient-border">
+		<div class="container flex items-center">
+			<div class="flex flex-1 flex-wrap items-center justify-start gap-12">
+				<p>&copy; 2021 Scaleyf (MVP)<span class="block md:inline"> <span class="hidden md:inline">-</span> Scale your
+						finances</span></p>
+				<!-- <ul class="md:flex text-scaleyf-blue uppercase gap-12 text-xs">
+					<li class="my- md:mx-2"><a href="index.html#features">Features</a></li>
+					<li class="my- md:mx-2"><a href="create-profile.html">Create profile</a>
+					</li>
+					<li class="my- md:mx-2"><a href="#">Set strategy</a></li>
+					<li class="my- md:mx-2"><a href="run-stop-bot.html">Run/Stop bot</a></li>
+					<li class="my- md:mx-2"><a href="contact.html">Contact</a></li>
+				</ul> -->
+			</div>
+			<div class="flex gap-10 mt-12 md:mt-0">
+				<li class="list-none"><i class="mx-2 lg:mx-0 text-scaleyf-green text-2xl fab fa-twitter"></i></li>
+				<li class="list-none"><i class="mx-2 lg:mx-0 text-scaleyf-green text-2xl fab fa-facebook-square"></i>
+				</li>
+
+			</div>
+		</div>
+	</footer>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./scripts/set-strategy.js"></script>
+	<script src="./scripts/showHidePassStrategy.js"></script>
+	<script src="./scripts/hamburgerMenu.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>

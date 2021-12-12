@@ -28,7 +28,14 @@
   width: 48px;
   height: 48px;
   transition: all 0.25s;
+
+  position: relative;
+  border: 0
 }
+.hamburger:active{
+  border:0
+}
+
 
 .hamburger__top-bun,
 .hamburger__bottom-bun {
@@ -36,13 +43,18 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #000;
+  background: #28427a;
   transform: rotate(0);
   transition: all 0.5s;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .hamburger:hover [class*="-bun"] {
-  background: #333;
+  background: #419669;
 }
 
 .hamburger__top-bun {

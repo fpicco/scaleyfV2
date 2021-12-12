@@ -3,267 +3,235 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Scaleyf</title>
+	<title>Scaleyf</title>
 
-    <link rel="shortcut icon" type="image/jpg" href="./imgs/Bitcoin.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/hamburger-menu.css">
-    <link rel="stylesheet" href="./styles/style.css">
+	<link rel="shortcut icon" type="image/jpg" href="./imgs/Bitcoin.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/hamburger-menu.css">
+	<link rel="stylesheet" href="./styles/style.css">
 
 </head>
 
 <body class="font-Poppins">
-    <!-- ------------------------------- Header -------------------------------- -->
-    <!-- https://codepen.io/ttntm/pen/dqaNPp -->
-    <header id='top' class="bg-white gradient-border gradient-border-h fixed w-full z-50 -mt-24 ml-0">
+	<!-- ------------------------------- Header -------------------------------- -->
+	<!-- https://codepen.io/ttntm/pen/dqaNPp -->
+	<header id='top' class="gradient-border gradient-border-h fixed w-full z-50 -mt-16 m-0">
 
-        <nav id="site-menu" class="container flex flex-col md:flex-row justify-between item-center py-4 mt-2 md:mt-4">
-            <div class="flex justify-between">
-                <a class="flex items-center py-1 mx-auto px-2 " href="#">
-                    <img class="w-9" src="./imgs/Bitcoin.png">
-                    <h2 class="text-md text-center text-scaleyf-blue uppercase px-2">Scaleyf</h2>
-                </a>
-                <button id="menuBtn" class="hamburger block md:hidden focus:outline-none self-end pr-4" type="button"
-                    onclick="navToggle();">
-                    <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
-                </button>
-            </div>
+		<nav id="site-menu" class="container flex flex-col md:flex-row justify-between item-center pb-1 mt-1 md:mt-2">
+			<div class="flex justify-between">
+				<a class="flex items-center py-1 mx-auto" href="#">
+					<img class="w-9" src="./imgs/Bitcoin.png">
+					<h2 class="text-md text-center text-scaleyf-blue uppercase px-2">Scaleyf</h2>
+				</a>
+				<button id="menuBtn" class="hamburger block md:hidden self-end pr-4" type="button"
+					onclick="navToggle();">
+					<span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+				</button>
+			</div>
 
-            <ul id="menu"
-                class="hidden w-full md:w-auto self-end md:self-center md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 flex-1 justify-end items-center gap-1 text-scaleyf-blue uppercase text-xs">
-                <li class="mt-4 md:mt-0"><a
-                        class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h" " href="
-                        #features">Features</a></li>
-                <li class="mt-4 md:mt-0"><a
-                        class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                        href="create-profile.html">Create profile</a>
-                </li>
-                <li class="mt-4 md:mt-0"><a
-                        class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                        href="set-strategy.html">Set strategy</a></li>
-                <li class="mt-4 md:mt-0"><a
-                        class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                        href="run-stop-bot.html">Run/Stop bot</a></li>
-                <li class="mt-4 md:mt-0"><a
-                        class="w-full md:w-auto md:pr-4 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
-                        href="#contact">Contact</a></li>
+			<ul id="menu"
+				class="hidden w-full md:w-auto self-end md:self-center md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 flex-1 justify-end items-center gap-1 text-scaleyf-blue uppercase text-xs">
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h " " href="
+						#features">Features</a></li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="create-profile.html">Create profile</a>
+				</li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="set-strategy.html">Set strategy</a></li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="run-stop-bot.html">Run/Stop bot</a></li>
+				<li class="mt-4 md:mt-0"><a
+						class="w-full md:w-auto md:px-3 py-2 md:py-1 md:pt-2 gradient-border hover:gradient-border-h"
+						href="contact.html">Contact</a></li>
 
-                <!-- <button type="button"
+				<!-- <button type="button"
                     class="bg-gradient-to-r from-scaleyf-blue  to-scaleyf-green text-white rounded-md px-7 py-3 uppercase">Login</button> -->
-            </ul>
+			</ul>
 
-        </nav>
+		</nav>
 
-    </header>
+	</header>
 
-    <!-- -------------------------------- Hero --------------------------------- -->
-    <section class="relative bg-gradient-to-r from-scaleyf-blue  to-scaleyf-green py-16 lg:py-28 mt-24">
+	<!-- -------------------------------- Hero --------------------------------- -->
+	<section class="relative bg-gradient-to-r from-scaleyf-blue  to-scaleyf-green py-16 lg:py-28 mt-16 overflow-x-hidden">
 
-        <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-0">
-            <!-- ------------------------------- Content ------------------------------- -->
-            <div class="flex flex-1 flex-col items-center lg:items-start">
-                <h2 class="text-white text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
-                    A simple trading bot
-                </h2>
-                <p class="text-scaleyf-grey text-lg text-center lg:text-left mb-6">
-                    A clean and simple interface to setup and configure your bot using DCA strategy. Try it for free.
-                </p>
-                <div class="flex justify-center flex-wrap gap-6">
-                    <button type="button" class="btn btn-blue hover:bg-scaleyf-green ">Create profile</button>
-                    <button type="button" class="btn btn-white hover:bg-scaleyf-green ">Run Bot</button>
-                </div>
-            </div>
-            <!-- -------------------------------- Image -------------------------------- -->
-            <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-                <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/hero.png">
-            </div>
+		<div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-0 z-10">
+			<!-- ------------------------------- Content ------------------------------- -->
+			<div class="flex flex-1 flex-col items-center lg:items-start" data-aos="zoom-out" data-aos-duration="1500"
+				data-aos-delay="100">
+				<h2 class="text-white text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+					The simplest trading bot
+				</h2>
+				<p class="text-scaleyf-grey text-lg text-center lg:text-left mb-6">
+					A clean and simple interface to setup and configure your bot using Bollinger Bands and DCA strategy.
+					Try it for free.
+				</p>
+				<div class="flex justify-center flex-wrap gap-6">
+					<a href="create-profile.html"><button type="button"
+							class="btn  hover:btn-h mx-1 btn-blue hover:bg-scaleyf-green ">Create profile</button></a>
+					<!-- <a href="set-strategy.html"><button type="button"
+							class="btn hover:btn-h btn-white hover:bg-scaleyf-green">Set strategy</button></a> -->
+					<a href="run-stop-bot.html"><button type="button"
+							class="btn hover:btn-h btn-white hover:bg-scaleyf-green">Run/Stop Bot</button></a>
+				</div>
+			</div>
+			<!-- -------------------------------- Image -------------------------------- -->
+			<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+				<img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/hero2.png">
+			</div>
 
 
-        </div>
+		</div>
 
-        <!-- -------------------------- Rounded Rectangle -------------------------- -->
-        <div
-            class="hidden lg:block overflow-hidden 
-            gradient-border border-gradient-r-blue-green-transparent rounded-l-full absolute h-80 w-2/4 right-0 -mr-2 lg:-bottom-16 lg:w-5/12">
-        </div>
-        <!-- <div
-                class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-l-full absolute h-80 w-2/4 right-0 lg:-bottom-16 lg:w-5/12">
-            </div> -->
+		<!-- -------------------------- Rounded Rectangle -------------------------- -->
+		<div
+			class="hidden lg:block overflow-hidden 
+    gradient-border border-gradient-r-blue-green-transparent rounded-l-full absolute h-80 w-2/4 right-0 lg:-bottom-16 lg:w-5/12 m-0">
+		</div>
 
-    </section>
 
-    <!-- ------------------------------ Features ------------------------------- -->
-    <section id="features" class="bg-scaleyf-white pt-40 pb-20">
-        <!-- ------------------------------- Heading ------------------------------- -->
-        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-            <h2 class="text-3xl text-center text-scaleyf-blue ">Features</h2>
-            <p class="text-center text-scaleyf-dark-grey mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis facilis qui ad, ex nam quas tempore veritatis placeat praesentium, dolorem accusamus ullam
-                sit, ducimus doloremque nulla quis. Animi, sunt optio?</p>
-        </div>
-        <!-- ----------------------------- Feature #1 ------------------------------ -->
-        <div class="relative mt-20 lg:mt-24">
-            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
-                <!-- -------------------------------- Image -------------------------------- -->
-                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-                    <img class="w-4/6 h-4/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/Bitcoin.png">
-                </div>
-                <!-- ------------------------------- Content ------------------------------- -->
-                <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h2 class="text-2xl text-scaleyf-blue ">Lorem ipsum dolor sit amet.</h2>
-                    <p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum, dolor
-                        sit amet consectetur adipisicing elit. Nemo et mollitia vitae quasi dolorum asperiores quod aut
-                        deserunt commodi ex.
-                    </p>
-                    <button type="button" class="btn hover:bg-scaleyf-green ">More
-                        Info</button>
-                </div>
+	</section>
 
-            </div>
-            <!-- -------------------------- Rounded Rectangle -------------------------- -->
-            <!-- <div
-                class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12">
-            </div> -->
-            <div
-                class="hidden lg:block overflow-hidden 
-            gradient-border border-gradient-r-blue-green-transparent rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12 -ml-2">
-            </div>
-        </div>
-        <!-- ----------------------------- Feature #2 ------------------------------ -->
-        <div class="relative mt-10 lg:mt-20">
-            <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
-                <!-- -------------------------------- Image -------------------------------- -->
-                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-                    <img class="w-4/6 h-4/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/LiteCoin.png">
-                </div>
-                <!-- ------------------------------- Content ------------------------------- -->
-                <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h2 class="text-2xl text-scaleyf-blue ">Lorem, ipsum dolor.</h2>
-                    <p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum, dolor
-                        sit amet consectetur adipisicing elit. Quasi eum harum distinctio saepe nulla. Eum?
-                    </p>
-                    <button type="button" class="btn hover:bg-scaleyf-green ">More
-                        Info</button>
-                </div>
+	<!-- ------------------------------ Features ------------------------------- -->
+	<section id="features" class="bg-scaleyf-white py-40 overflow-x-hidden">
+		<!-- ------------------------------- Heading ------------------------------- -->
+		<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="100">
+			<h2 class="text-3xl text-center text-scaleyf-blue ">DCA investment</h2>
+			<p class="text-center text-scaleyf-dark-grey mt-4">Dollar-cost averaging (DCA) is an investment strategy in
+				which an investor divides up the total amount to be invested across periodic purchases of a target asset
+				in an effort to reduce the impact of volatility on the overall purchase.</p>
+		</div>
+		<!-- ----------------------------- Feature #1 ------------------------------ -->
+		<div class="relative mt-16 ">
+			<div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+				<!-- -------------------------------- Image -------------------------------- -->
+				<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0" data-aos="zoom-in-right"
+					data-aos-duration="500" data-aos-delay="300">
+					<img class="w-4/6 sm:w-3/4 md:w-4/6" src="./imgs/Bitcoin.png">
+				</div>
+				<!-- ------------------------------- Content ------------------------------- -->
+				<div class="flex flex-1 flex-col items-center lg:items-start md:mt-4" data-aos="zoom-in"
+					data-aos-duration="300" data-aos-delay="300">
+					<h2 class="text-2xl text-scaleyf-blue ">The simplest strategy</h2>
+					<p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">The strategy is always
+						the same, Bollinger Bands for buying, take profit for selling and DCA for withstanding market
+						changes.
+					</p>
+					<!-- <button type="button" class="btn hover:btn-h hover:bg-scaleyf-green ">More
+						Info</button> -->
+				</div>
 
-            </div>
-            <!-- -------------------------- Rounded Rectangle -------------------------- -->
-            <!-- <div
-                class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-l-full absolute h-80 w-2/4 right-0 lg:-bottom-16 lg:w-5/12">
-            </div> -->
+			</div>
+			<!-- -------------------------- Rounded Rectangle #1-------------------------- -->
 
-            <div
-                class="hidden lg:block overflow-hidden 
-            gradient-border border-gradient-r-blue-green-transparent rounded-l-full absolute h-80 w-2/4 right-0 -mr-2 lg:-bottom-16 lg:w-5/12">
-            </div>
+			<div
+				class="hidden lg:block overflow-hidden 
+            gradient-border border-gradient-r-blue-green-transparent rounded-r-full absolute h-52 w-2/4 lg:bottom-3 lg:w-5/12 -ml-1">
+			</div>
 
-        </div>
-        <!-- ----------------------------- Feature #3 ------------------------------ -->
-        <div class="relative mt-10 lg:mt-20">
-            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
-                <!-- -------------------------------- Image -------------------------------- -->
-                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-                    <img class="w-4/6 h-4/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/Etherium.png">
-                </div>
-                <!-- ------------------------------- Content ------------------------------- -->
-                <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h2 class="text-2xl text-scaleyf-blue ">Lorem, ipsum dolor.</h2>
-                    <p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum dolor, sit
-                        amet consectetur adipisicing elit. Quasi, aperiam.
-                    </p>
-                    <button type="button" class="btn hover:bg-scaleyf-green ">More
-                        Info</button>
-                </div>
+			
 
-            </div>
-            <!-- -------------------------- Rounded Rectangle -------------------------- -->
-            <!-- <div
-                class="hidden lg:block overflow-hidden bg-scaleyf-blue rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12">
-            </div> -->
-            <div
-                class="hidden lg:block overflow-hidden 
-            gradient-border border-gradient-r-blue-green-transparent rounded-r-full absolute h-80 w-2/4 lg:-bottom-16  lg:w-5/12 -ml-2">
-            </div>
-        </div>
+		</div>
+		<!-- ----------------------------- Feature #2 ------------------------------ -->
+		<div class="relative mt-10 lg:mt-20 ">
+			<div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+				<!-- -------------------------------- Image -------------------------------- -->
+				<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0" data-aos="zoom-in-left"
+					data-aos-duration="500" data-aos-delay="300">
+					<img class="w-4/6 sm:w-3/4 md:w-4/6" src="./imgs/LiteCoin.png">
+				</div>
+				<!-- ------------------------------- Content ------------------------------- -->
+				<div class="flex flex-1 flex-col items-center lg:items-start md:pt-8 " data-aos="zoom-in"
+					data-aos-duration="300" data-aos-delay="300">
+					<h2 class="text-2xl text-scaleyf-blue ">Automatic trading</h2>
+					<p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Let your bot trade
+						automatically for you 24/7.
+					</p>
+					<!-- <button type="button" class="btn hover:btn-h hover:bg-scaleyf-green ">More
+						Info</button> -->
+				</div>
 
-    </section>
+			</div>
+			<!-- -------------------------- Rounded Rectangle #2-------------------------- -->
 
-    <!-- --------------------------------- FAQ --------------------------------- -->
-    <!-- <section class="bg-scaleyf-white py-20 ">
-        <div class="container"> -->
-    <!-- ------------------------------- Heading ------------------------------- -->
-    <!-- <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-                <h2 class="text-3xl text-center text-scaleyf-blue ">Frecuently Asked Questions</h2>
-                <p class="text-center text-dark-grey mt-4">
-                    Here are some of our FAQs. If you have any other questions you’d like answered please feel free to
-                    email us.</p>
-            </div> -->
-    <!-- ------------------------------ FAQ items ------------------------------ -->
-    <!-- <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">Lorem ipsum dolor sit?</span>
-                    <i class="text-scaleyf-green fas fa-chevron-down"></i>
-                </div>
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">Lorem ipsum dolor sit amet consectetur?</span>
-                    <i class="text-scaleyf-green fas fa-chevron-down"></i>
-                </div>
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">Lorem ipsum dolor sit?</span>
-                    <i class="text-scaleyf-green fas fa-chevron-down"></i>
-                </div>
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">Lorem ipsum dolor sit amet consectetur?</span>
-                    <i class="text-scaleyf-green fas fa-chevron-down"></i>
-                </div>
-                <button type="button" class="mt-12 flex self-center btn hover:bg-scaleyf-green ">More
-                    Info</button>
-            </div>
-        </div>
-    </section> -->
+			<div
+				class="hidden lg:block overflow-hidden 
+						gradient-border border-gradient-r-blue-green-transparent rounded-l-full absolute h-52 w-5/12 lg:bottom-3 right-0 g:w-5/12 m-0">
+			</div>
 
-    <!-- ----------------------------- Contact us ------------------------------ -->
-    <section id="contact" class="bg-gradient-to-r from-scaleyf-blue to-scaleyf-green text-white py-20">
-        <div class="container">
-            <div class="sm:w-3/4 lg:w-2/4 mx-auto">
-                <p class="font-light uppercase text-center mb-8">Lorem ipsum dolor.</p>
-                <h2 class="text-3xl text-center">Stay up-to-date with what we’re doing</h2>
-                <div class="flex flex-col sm:flex-row gap-6 mt-8">
-                    <input type="text" placeholder="Enter your email address"
-                        class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black">
-                    <button type="button" class="flex self-center btn hover:bg-scaleyf-green ">Contact Us</button>
-                </div>
-            </div>
-        </div>
-    </section>
+			</div>
 
-    <!-- ------------------------------- Footer -------------------------------- -->
-    <footer class="bg-scaleyf-blue py-8">
-        <div class="container flex flex-col md:flex-row items-center">
-            <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+		<!-- ----------------------------- Feature #3 ------------------------------ -->
+		<div class="relative mt-10 lg:mt-20">
+			<div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+				<!-- -------------------------------- Image -------------------------------- -->
+				<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0" data-aos="zoom-in-right"
+					data-aos-duration="500" data-aos-delay="300">
+					<img class="w-4/6 sm:w-3/4 md:w-4/6" src="./imgs/Etherium.png">
+				</div>
+				<!-- ------------------------------- Content ------------------------------- -->
+				<div class="flex flex-1 flex-col items-center lg:items-start" data-aos="zoom-in"
+					data-aos-duration="300" data-aos-delay="300">
+					<h2 class="text-2xl text-scaleyf-blue ">Zero knowledge to start</h2>
+					<p class="text-dark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">You require no knowledge
+						for configuring the bots for profitable trades. They are automatically deployed with
+						professional investment strategies.
+					</p>
+					<!-- <button type="button" class="btn hover:btn-h  hover:bg-scaleyf-green ">More
+						Info</button> -->
+				</div>
 
-                <ul class="flex-col text-white uppercase gap-12 text-xs">
-                    <li class="my-2"><a href="#features">Features</a></li>
-                    <li class="my-2"><a href="create-profile.html">Create profile</a>
-                    </li>
-                    <li class="my-2"><a href="set-strategy.html">Set strategy</a></li>
-                    <li class="my-2"><a href="run-stop-bot.html">Run/Stop bot</a></li>
-                    <li class="my-2"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="flex gap-10 mt-12 md:mt-0">
-                <li class="list-none"><i class="text-white text-2xl fab fa-twitter"></i></li>
-                <li class="list-none"><i class="text-white text-2xl fab fa-facebook-square"></i></li>
+			</div>
+			<!-- -------------------------- Rounded Rectangle  #3 -------------------------- -->
 
-            </div>
-        </div>
-    </footer>
-<script src="./scripts/hamburgerMenu.js"></script>
+			<div
+				class="hidden lg:block overflow-hidden 
+            gradient-border border-gradient-r-blue-green-transparent rounded-r-full absolute h-52 w-2/4 lg:bottom-3 lg:w-5/12 -ml-1">
+			</div>
+		</div>
+
+	</section>
+
+
+	<!-- ------------------------------- Footer -------------------------------- -->
+	<footer class="py-4 bg-white w-full mx-0 gradient-border-h border-t-2 border-b-0 gradient-border">
+		<div class="container flex items-center">
+			<div class="flex flex-1 flex-wrap items-center justify-start gap-12">
+				<p>&copy; 2021 Scaleyf (MVP)<span class="block md:inline"> <span class="hidden md:inline">-</span> Scale
+						your
+						finances</span></p>
+				<!-- <ul class="md:flex text-scaleyf-blue uppercase gap-12 text-xs">
+					<li class="my-2 md:mx-2"><a href="#features">Features</a></li>
+					<li class="my-2 md:mx-2"><a href="create-profile.html">Create profile</a>
+					</li>
+					<li class="my-2 md:mx-2"><a href="set-strategy.html">Set strategy</a></li>
+					<li class="my-2 md:mx-2"><a href="run-stop-bot.html">Run/Stop bot</a></li>
+					<li class="my-2 md:mx-2"><a href="contact.html">Contact</a></li>
+				</ul> -->
+			</div>
+			<div class="flex gap-10 mt-12 md:mt-0">
+				<li class="list-none"><i class="mx-2 lg:mx-0 text-scaleyf-green text-2xl fab fa-twitter"></i></li>
+				<li class="list-none"><i class="mx-2 lg:mx-0 text-scaleyf-green text-2xl fab fa-facebook-square"></i>
+				</li>
+
+			</div>
+		</div>
+	</footer>
+	<script src="./scripts/hamburgerMenu.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
